@@ -599,7 +599,7 @@
             });
             
             // Listen for storage changes (in case data is updated in another tab)
-            window.addEventListener('storage', () => {
+            windgow.addEventListener('storage', () => {
                 const updatedTodos = JSON.parse(localStorage.getItem('todos')) || [];
                 const updatedTags = JSON.parse(localStorage.getItem('tags')) || [];
                 todos = updatedTodos;
